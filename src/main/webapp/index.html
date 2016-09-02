@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Hello World!</h1>
+        <p>Request a secure Admin page <a href="Admin/Admin.html">here!</a></p>
+        <p>Request a secure User page <a href="Customer/Customer.html" >here!</a></p>
+    </body>
+</html>
+
+<!--
+Explain the following:
+ How does the server know that users are logged-in for subsequent calls to a protected page after we
+have logged-in (why is it not necessary to retype the username/password)
+
+ANSWER: because a cookie is generated with an session ID, the session on the server will keep the identification
+as long as the session is alive and the cookie remains in the browser.
+
+ For subsequent calls to a protected resource, where is the information stored that tells we are already
+logged in (on the Server on in the Client)?
+
+ANSWER: The authorization happens on the server, it identifies the user from the cookie which are stored on the client.
+
+ This question relates to the question above. Is Form Based Authentication stateful or stateless (seen
+from the servers point of view)?
+
+ANSWER: stateful - because there is placed a cookie that keeps track of the previous transaction.
+
